@@ -4,6 +4,12 @@ spring:
     password: root
     url: jdbc:mysql://192.168.121.128:3306/gulimall_pms?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
     driver-class-name: com.mysql.cj.jdbc.Driver
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.121.128:8848
+  application:
+    name: gulimall-product
 
 # classpath*表示除了扫描本类路径下的文件，还会包扩本包所引用的的包下的类路径
 mybatis-plus:
