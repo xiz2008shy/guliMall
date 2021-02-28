@@ -22,7 +22,6 @@ import org.springframework.context.annotation.Primary;
  *
  * @author Mark sunlightcs@gmail.com
  */
-//helloworld
 @Configuration
 public class DbConfig {
     @Value("${renren.database: mysql}")
